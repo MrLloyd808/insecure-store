@@ -7,7 +7,14 @@
   name: "dark";
   default: true;
   --color-primary: #101828;
-  --color-secondary: #1D232A;
+  --color-secondary: #1D232A ;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: var(--color-accent);
+  --color-secondary: #fff;
 }
 
 .makeflex {

@@ -1,36 +1,27 @@
 import React from 'react'
 import { navlist } from '../modules'
-import { Palette, X } from 'lucide-react'
+import { X } from 'lucide-react'
 import { useSideBar } from '../modules/Store'
+import DropDownTheme from './DropDownTheme'
 
 function Sidebar() {
   const visible = useSideBar((state) => state.visible)
   const inVisible = useSideBar((state) => state.inVisible)
   console.log(visible)
   return (
-    <nav className={`w-80 shadow min-h-screen top-0 fixed md:sticky bg-secondary min-w-[350px] ${!visible ? "-translate-x-100" : "translate-x-0"} md:translate-x-0`}>
-         <div className='makeflex md:flex md:items-center md:text-center p-5 mb-20 w-full'>
+    <nav className={`w-80 shadow min-h-screen top-0 fixed md:sticky bg-secondary min-w-[350px] ${!visible ? "-translate-x-100" : "translate-x-0"} md:translate-x-0 `}>
+         <div className='makeflex md:flex md:items-center md:text-center p-5 w-full'>
             <h4 className='font-semibold cursor-pointer'>INSECURE</h4>
             <X className='md:hidden cursor-pointer' onClick={inVisible}/>
          </div>
 
-         <ul className='font-semibold uppercase w-full mt-5 flex flex-col items-center justify-center text-center gap-3'>
+         <ul className='font-semibold uppercase flex flex-col items-center justify-center text-center mt-20 mb-75 gap-1'>
             {
-                navlist.map(link => <li key={link.id}>{link.title}</li>)
+                navlist.map(link => <li key={link.id} className='hover:bg-primary w-60 max-w-70 p-2 rounded'>{link.title}</li>)
             }
          </ul>
-       
-       <section className='flex items-center justify-center relative mt-85'>
-        <div className='flex items-center cursor-pointer'>
-        <Palette /> 
-         <select defaultValue="Pick a font" className="select select-ghost">
-         <option disabled={true}> Pick a theme</option>
-          <option>Dark</option>
-         <option>Light</option>
-         <option>Synthwave</option>
-        </select>
-         </div>
-       </section>
+
+         <DropDownTheme />
          
     </nav>
   )

@@ -1,13 +1,13 @@
 
-import React, { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import NavBar from '../components/NavBar'
+import { useTheme } from '../modules/Store'
 
 function Shop() {
-
-  const [isOpen, setIsOpen] = useState(true)
+const mode = useTheme((state) => state.mode)
+  
   return (
-    <main data-theme="dark" className='md:flex block gap-1 shadow-2xl overflow-hidden h-screen '>
+    <main data-theme={mode} className='md:flex block gap-1 shadow-2xl overflow-hidden h-screen '>
     
        
        <Sidebar />
