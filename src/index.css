@@ -13,8 +13,99 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
+  --color-primary: var(--color-neutral-content);
+  --color-secondary: #fff;
+}
+
+@plugin "daisyui/theme" {
+  name: "forest";
+  default: true;
+  --color-primary: var(--color-accent);
+  --color-secondary: #1B1717;
+}
+
+@plugin "daisyui/theme" {
+  name: "synthwave";
+  default: true;
+  --color-primary: var(--color-neutral);
+  --color-secondary:#09002F;
+}
+
+@plugin "daisyui/theme" {
+  name: "luxury";
+  default: true;
+  --color-primary: var(--color-neutral);
+  --color-secondary: #09090B;
+}
+
+@plugin "daisyui/theme" {
+  name: "lofi";
+  default: true;
   --color-primary: var(--color-accent);
   --color-secondary: #fff;
+}
+
+@plugin "daisyui/theme" {
+  name: "black";
+  default: true;
+  --color-primary: var(--color-neutral);
+  --color-secondary: #000000;
+}
+
+@plugin "daisyui/theme" {
+  name: "cupcake";
+  default: true;
+  --color-primary: var(--color-primary-content);
+  --color-secondary: #fff;
+}
+
+@plugin "daisyui/theme" {
+  name: "cyberpunk";
+  default: true;
+  --color-primary: var(--color-accent);
+  --color-secondary: #FFF248;
+}
+
+@plugin "daisyui/theme" {
+  name: "aqua";
+  default: true;
+  --color-primary: var(--color-neutral);
+  --color-secondary: #1A368B;
+}
+
+@plugin "daisyui/theme" {
+  name: "abyss";
+  default: true;
+  --color-primary: var(--color-neutral);
+  --color-secondary: #001E29;
+}
+
+@plugin "daisyui/theme" {
+  name: "coffee";
+  default: true;
+  --color-primary: var(--color-neutral);
+  --color-secondary: #261B25;
+}
+
+@plugin "daisyui/theme" {
+  name: "retro";
+  default: true;
+  --color-primary: var(--color-accent);
+  --color-secondary: #ECE3CA;
+}
+
+@plugin "daisyui/theme" {
+  name: "caramellatte";
+  default: true;
+  --color-primary: var(--color-accent-content);
+  --color-secondary: #FFF7ED;
+}
+
+@plugin "daisyui/theme" {
+  name: "sunset";
+  default: true;
+  --color-primary: var(--color-neutral);
+  --color-secondary: #121C22;
 }
 
 .makeflex {

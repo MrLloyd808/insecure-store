@@ -9,7 +9,7 @@ function Sidebar() {
   const inVisible = useSideBar((state) => state.inVisible)
   console.log(visible)
   return (
-    <nav className={`w-80 shadow min-h-screen top-0 fixed md:sticky bg-secondary min-w-[350px] ${!visible ? "-translate-x-100" : "translate-x-0"} md:translate-x-0 `}>
+    <nav className={`w-80 shadow-xl min-h-screen top-0 fixed md:sticky bg-secondary min-w-[350px] ${!visible ? "-translate-x-100" : "translate-x-0"} md:translate-x-0 `}>
          <div className='makeflex md:flex md:items-center md:text-center p-5 w-full'>
             <h4 className='font-semibold cursor-pointer'>INSECURE</h4>
             <X className='md:hidden cursor-pointer' onClick={inVisible}/>

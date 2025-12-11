@@ -17,17 +17,50 @@ export const useTheme = create(
     persist(
         (set) => ({
            mode: 'dark',
-           themeDark: () => set((state) => ({
+           themeDark: () => set(() => ({
             mode: "dark"
         })),
-        themeLight: () => set((state) => ({
+        themeLight: () => set(() => ({
             mode: "light"
         })),
-        themeForest: () => set((state) => ({
+        themeForest: () => set(() => ({
             mode: "forest"
         })),
-        themeSynthwave: () => set((state) => ({
+        themeSynthwave: () => set(() => ({
             mode: "synthwave"
+        })),
+        themeLuxury: () => set(() => ({
+            mode: "luxury"
+        })),
+        themeCupcake: () => set(() => ({
+            mode: 'cupcake'
+        })),
+        themeBlack: () => set(() => ({
+            mode: "black"
+        })),
+        themeLofi: () => set(() => ({
+            mode: "lofi"
+        })),
+        themeCyberpunk: () => set(() => ({
+            mode: 'cyberpunk'
+        })),
+        themeAqua: () => set(() => ({
+            mode: "aqua"
+        })),
+        themeAbyss: () => set(() => ({
+            mode: "abyss"
+        })),
+        themeCoffee: () => set(() => ({
+            mode: "coffee"
+        })),
+        themeRetro: () => set(() => ({
+            mode: "retro"
+        })),
+        themeCaramel: () => set(() => ({
+            mode: "caramellatte"
+        })),
+        themeSunset: () => set(() => ({
+            mode: "sunset"
         }))
         }),
         {
