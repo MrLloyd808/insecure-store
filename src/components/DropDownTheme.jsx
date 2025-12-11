@@ -7,7 +7,6 @@ function DropDownTheme() {
     const themeForest = useTheme((state) => state.themeForest)
     const themeSynthwave = useTheme((state) => state.themeSynthwave)
     const themeLuxury = useTheme((state) => state.themeLuxury)
-    const themeLofi = useTheme((state) => state.themeLofi)
     const themeBlack = useTheme((state) => state.themeBlack)
     const themeCupcake = useTheme((state) => state.themeCupcake)
     const themeCyberpunk = useTheme((state) => state.themeCyberpunk)
@@ -20,7 +19,7 @@ function DropDownTheme() {
 
   return (
     <section className='flex items-center justify-center'>
-        <div className="dropdown dropdown-top dropdown-center bg-secondary shadow-2xl py-2 px-1 rounded hover:bg-primary">
+        <div className="dropdown dropdown-top dropdown-center bg-secondary py-2 px-1 rounded hover:bg-primary">
   <div tabIndex={0} role="button" className="flex gap-2 shadow-2xl cursor-pointer rounded-xl"> <Palette /> Change Theme </div>
   <ul tabIndex="-1" className="dropdown-content menu rounded shadow-2xl mb-2 z-1 w-45 p-2 bg-primary">
      <h2 className='font-semibold'>Pick theme</h2>
@@ -30,7 +29,6 @@ function DropDownTheme() {
     <li className='hover:bg-secondary px-3 py-1 rounded' onClick={themeForest}>Forest</li>
     <li className='hover:bg-secondary px-3 py-1 rounded' onClick={themeSynthwave}>Synthwave</li>
     <li className='hover:bg-secondary px-3 py-1 rounded' onClick={themeLuxury}>Luxury</li>
-    <li className='hover:bg-secondary px-3 py-1 rounded' onClick={themeLofi}>Lofi</li>
     <li className='hover:bg-secondary px-3 py-1 rounded' onClick={themeBlack}>Black</li>
     <li className='hover:bg-secondary px-3 py-1 rounded' onClick={themeCupcake}>Cupcake</li>
     <li className='hover:bg-secondary px-3 py-1 rounded' onClick={themeCyberpunk}>Cyberpunk</li>

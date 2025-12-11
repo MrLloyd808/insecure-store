@@ -39,13 +39,6 @@
 }
 
 @plugin "daisyui/theme" {
-  name: "lofi";
-  default: true;
-  --color-primary: var(--color-accent);
-  --color-secondary: #fff;
-}
-
-@plugin "daisyui/theme" {
   name: "black";
   default: true;
   --color-primary: var(--color-neutral);
