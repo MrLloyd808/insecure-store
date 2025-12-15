@@ -65,3 +65,21 @@ export const useTheme = create(
         }
     )
 )
+
+export const useCart = create(persist((set, get) => ({
+    cart: [],
+    AddToCart: (product) => { 
+        const mycart = get().cart
+        const exists = mycart.find(item => item.id === product.id)
+        if(exists) return
+        
+        set({
+        cart: [ ...mycart, {...product}]
+    })} ,
+    ResetCart: () => set({
+        cart: []
+    })
+}), {
+    name: "store-cart"
+}))
+

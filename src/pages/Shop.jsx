@@ -17,7 +17,7 @@ const mode = useTheme((state) => state.mode)
        <section className='w-full h-screen shadow-2xl flex flex-col'>
      <NavBar />
      <div className='w-full p-4 overflow-scroll grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-4'>
-      {productList.map(item => <Card id={item.id} name={item.name} url={item.url} price={item.price}/>)}
+      {productList.map(item => <Card key={item.id} name={item.name} url={item.url} price={item.price} item={item}/>)}
       
 
      </div>

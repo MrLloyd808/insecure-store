@@ -80,13 +80,13 @@ export const productList = [
       price: 800
    },
    {
-      id: 3,
+      id: 11,
       name: "Pants - Red",
       url: "redpants.jpg",
       price: 600
    },
    {
-      id: 3,
+      id: 12,
       name: "Pants - Black",
       url: "blackpants.jpg",
       price: 600
