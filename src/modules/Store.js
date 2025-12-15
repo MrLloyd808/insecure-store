@@ -38,9 +38,6 @@ export const useTheme = create(
         themeBlack: () => set(() => ({
             mode: "black"
         })),
-        themeLofi: () => set(() => ({
-            mode: "lofi"
-        })),
         themeCyberpunk: () => set(() => ({
             mode: 'cyberpunk'
         })),

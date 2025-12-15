@@ -15,7 +15,7 @@ function Sidebar() {
             <X className='md:hidden cursor-pointer' onClick={inVisible}/>
          </div>
 
-         <ul className='font-semibold uppercase flex flex-col items-center justify-center text-center mt-20 mb-75 gap-1'>
+         <ul className='font-semibold uppercase flex flex-col items-center justify-center text-center mt-20 mb-60 gap-1'>
             {
                 navlist.map(link => <li key={link.id} className='hover:bg-primary w-60 max-w-70 p-2 rounded'>{link.title}</li>)
             }
