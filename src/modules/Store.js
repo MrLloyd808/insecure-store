@@ -16,7 +16,7 @@ export const useSideBar = create((set) => ({
 export const useTheme = create(
     persist(
         (set) => ({
-           mode: 'dark',
+           mode: 'sunset',
            themeDark: () => set(() => ({
             mode: "dark"
         })),
