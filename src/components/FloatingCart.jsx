@@ -10,11 +10,11 @@ function FloatingCart() {
     const cartstate = useCartFloat((state) => state.cartstate)
     const hidden = useCartFloat((state) => state.hidden)
   return (
-    <div className={`absolute min-w-50 w-[75%] max-h-130 bg-neutral top-1/2 left-1/2 -translate-x-1/2 -translate-y-70 p-3 rounded overflow-hidden ${cartstate}`}>
+    <div className={`absolute min-w-50 w-[85%] max-h-130 bg-neutral top-1/2 left-1/2 -translate-x-1/2 -translate-y-70 p-3 rounded overflow-hidden ${cartstate}`}>
     
       <div className='makeflex w-full pb-3'>
                   <h4 className='font-semibold cursor-pointer'>CART</h4>
-                  <X className='md:hidden cursor-pointer' onClick={hidden}/>
+                  <X className=' cursor-pointer' onClick={hidden}/>
       </div>
      <hr />
      <section className='flex justify-center p-2'>
