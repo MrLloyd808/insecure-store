@@ -5,6 +5,7 @@ import CartCard from './CartCard'
 
 function FloatingCart() {
     const cart = useCart((state) => state.cart)
+    const ResetCart = useCart((state) => state.ResetCart)
   return (
     <div className='absolute min-w-50 w-[75%] max-h-130 bg-neutral top-1/2 left-1/2 -translate-x-1/2 -translate-y-70 p-3 rounded overflow-hidden'>
     
@@ -14,7 +15,7 @@ function FloatingCart() {
       </div>
      <hr />
      <section className='flex justify-center p-2'>
-        <button className='btn uppercase'>clear cart</button>
+        <button className='btn uppercase' onClick={() => ResetCart()}>clear cart</button>
      </section>
 
 
