@@ -6,7 +6,7 @@ import CartCard from './CartCard'
 function FloatingCart() {
     const cart = useCart((state) => state.cart)
   return (
-    <div className='absolute min-w-110 max-h-130 bg-neutral top-1/2 left-1/2 -translate-x-1/2 -translate-y-70 p-3 rounded overflow-hidden'>
+    <div className='absolute min-w-50 w-[75%] max-h-130 bg-neutral top-1/2 left-1/2 -translate-x-1/2 -translate-y-70 p-3 rounded overflow-hidden'>
     
       <div className='makeflex w-full pb-3'>
                   <h4 className='font-semibold cursor-pointer'>CART</h4>
