@@ -71,15 +71,18 @@ export const useCart = create(persist((set, get) => ({
     AddToCart: (product) => { 
         const mycart = get().cart
         const exists = mycart.find(item => item.id === product.id)
-        if(exists) return
-        
+        if(exists) return 
         set({
         cart: [ ...mycart, {...product}]
     })} ,
     ResetCart: () => set({
         cart: []
+    }),
+    RemoveFromCart: (product) => set({
+        cart: get().cart.filter(item => item.id !== product.id)
     })
-}), {
+}), 
+{
     name: "store-cart"
 }))
 
