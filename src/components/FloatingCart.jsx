@@ -2,16 +2,19 @@ import { X } from 'lucide-react'
 import React from 'react'
 import { useCart } from '../modules/Store'
 import CartCard from './CartCard'
+import { useCartFloat } from '../modules/Store'
 
 function FloatingCart() {
     const cart = useCart((state) => state.cart)
     const ResetCart = useCart((state) => state.ResetCart)
+    const cartstate = useCartFloat((state) => state.cartstate)
+    const hidden = useCartFloat((state) => state.hidden)
   return (
-    <div className='absolute min-w-50 w-[75%] max-h-130 bg-neutral top-1/2 left-1/2 -translate-x-1/2 -translate-y-70 p-3 rounded overflow-hidden'>
+    <div className={`absolute min-w-50 w-[75%] max-h-130 bg-neutral top-1/2 left-1/2 -translate-x-1/2 -translate-y-70 p-3 rounded overflow-hidden ${cartstate}`}>
     
       <div className='makeflex w-full pb-3'>
                   <h4 className='font-semibold cursor-pointer'>CART</h4>
-                  <X className='md:hidden cursor-pointer'/>
+                  <X className='md:hidden cursor-pointer' onClick={hidden}/>
       </div>
      <hr />
      <section className='flex justify-center p-2'>

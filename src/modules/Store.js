@@ -86,3 +86,12 @@ export const useCart = create(persist((set, get) => ({
     name: "store-cart"
 }))
 
+export const useCartFloat = create((set) => ({
+    cartstate: "hidden",
+    visible: () => set({
+        cartstate: "block"
+    }),
+    hidden: () => set({
+        cartstate: "hidden"
+    })
+}))
