@@ -19,7 +19,7 @@ function FloatingCart() {
 
 
       <div className='grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 overflow-scroll h-100'>
-        {cart.map(item => <CartCard item={item} id={item.id} name={item.name} price={item.price} url={item.url}/>)}
+        {cart.length ? cart.map(item => <CartCard item={item} id={item.id} name={item.name} price={item.price} url={item.url}/>) : <p>No items in cart</p>}
       </div>
    
 
