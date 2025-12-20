@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route index element={<Shop />} />
-    
+      <Route path='*' element={<h2>directory not recognised</h2>} />
       </Routes>
       </BrowserRouter>
     </>
